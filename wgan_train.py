@@ -140,6 +140,8 @@ def main():
     discriminator = Discriminator()
     discriminator.build(input_shape=(None, 64, 64, 3))
 
+
+
     g_optimizer = tf.optimizers.Adam(learning_rate=learning_rate, beta_1=0.5)
     d_optimizer = tf.optimizers.Adam(learning_rate=learning_rate, beta_1=0.5)
 
